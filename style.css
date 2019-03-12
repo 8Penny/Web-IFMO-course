@@ -1,3 +1,36 @@
-body {
+html,body {
     background-color: powderblue;
+    height:100%;
   }
+
+  #content{
+    width: 54%;
+    min-height: 100%;
+    float: left;
+    margin-right: 3%;
+    background-color: goldenrod;
+  }
+  
+  #sidebar-left{
+    width: 20%;
+    height: 130px;
+    float: left;
+    margin-right: 3%;
+    background-color: rebeccapurple;
+  }
+  
+  #sidebar-right{
+    width: 20%;
+    height: 130px;
+    float: left;
+    background-color: greenyellow;
+  }
+
+  #bottom-right{
+    width:43%;
+    height: 130px;
+    float: right;
+    margin-top: 20px;
+    background-color: greenyellow;
+  }
+  
