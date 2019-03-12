@@ -1,6 +1,14 @@
 html,body {
-    background-color: powderblue;
+    background-color:coral;
     height:100%;
+  }
+
+  .header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(255, 146, 127);
+    color: white;
+    font-size: 30px;
   }
 
   #content{
@@ -8,7 +16,8 @@ html,body {
     min-height: 100%;
     float: left;
     margin-right: 3%;
-    background-color: goldenrod;
+    background-color: tomato;
+    text-align: center;
   }
   
   #sidebar-left{
@@ -16,14 +25,16 @@ html,body {
     height: 130px;
     float: left;
     margin-right: 3%;
-    background-color: rebeccapurple;
+    background-color: tomato;
+    text-align: center;
   }
   
   #sidebar-right{
     width: 20%;
     height: 130px;
     float: left;
-    background-color: greenyellow;
+    background-color: tomato;
+    text-align: center;
   }
 
   #bottom-right{
@@ -31,6 +42,7 @@ html,body {
     height: 130px;
     float: right;
     margin-top: 20px;
-    background-color: greenyellow;
+    background-color: rgb(199, 101, 83);
+    text-align: center;
   }
   
