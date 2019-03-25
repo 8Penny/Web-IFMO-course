@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- объявление компонентов bootstrap 3 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -21,8 +22,9 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="panel panel-default">
-        <div class="panel-body">
-            <h2>Главная | Call to action</h2>
+        <div class="panel-body text-center list-group-item-warning">
+            <img src="https://irecommend.ru/sites/default/files/product-images/20005/y6coioje.png" class="img-responsive center-block">
+            <h1>Только сегодня! Качественный термос всего за 1999 рублей! Спеши сделать заказ!</h1>
         </div>
       </div>
     </div>
@@ -31,8 +33,8 @@
   <div class="row">
     <div class="col-sm-12">
       <div class="panel panel-default">
-        <div class="panel-body">
-            <h2>Краткое описание</h2>
+        <div class="panel-body text-center list-group-item-warning">
+            <h1>Термос Арктика: 1,5 литра, нержавеющая сталь, по-настоящему горячий внутри!</h1>
         </div>
       </div>
     </div>
@@ -40,19 +42,31 @@
   <!-- Параметры / тип строка-список -->
   <div class="row">
     <div class="col-sm-12">
-        <ul class="list-group">
-          <li class="list-group-item"><h3>First item</h3></li>
-          <li class="list-group-item"><h3>Second item</h3></li>
-          <li class="list-group-item"><h3>Third item</h3></li>
-        </ul>
+        <div class="list-group">
+          <a class="list-group-item"><h4><span class="glyphicon glyphicon-ok"></span> Объём: 1,5 литра</h4></a>
+          <a class="list-group-item"><h4><span class="glyphicon glyphicon-ok"></span> Колба и корпус из нержавеющей стали</h4></a>
+          <a class="list-group-item"><h4><span class="glyphicon glyphicon-ok"></span> Более +50°C после 24 часов!</h4></a>
+        </div>
     </div>
   </div>
   <!-- Полное описание / тип строка -->
   <div class="row">
     <div class="col-sm-12">
       <div class="panel panel-default">
-        <div class="panel-body">
-            <h2>Полное описание</h2>
+        <div class="panel-body list-group-item-warning">
+            <p>Говорят, что лучший отдых – это смена деятельности. Те, кому вместо сидения перед телевизором подавай охоту, рыбалку, сплавы по бурным рекам, покорение вершин, понимают это как никто другой. Такие люди жизнерадостны, активны и любознательны. Активным людям – соответствующую экипировку! Яркий и удобный термос Арктика 202 серии будет всегда кстати, летом и зимой, на даче и в походе он обеспечит своего хозяина горячим питьем или едой благодаря своему универсальному широкому горлу и двойной пробке. Покрытый цветным лаком, он не затеряется ни в траве, ни в снегу. Он ценит свободу Ваших действий: просто повесьте его на плечо за ремешок и отправляйтесь навстречу путешествиям!</p>
+               <br>
+            <p>Термос объемом 1,5 л</p>
+            <p>Колба и корпус из нержавеющей стали марки 18/8</p>
+            <p>Цвет: болотный (лаковое покрытие корпуса)</p>
+            <p>Широкая двойная пробка, узкий дозатор, каналы для налива в неполностью открытом положении</p>
+            <p>Дополнительная чашка и ремешок для переноса в комплекте</p>
+            <p>Диаметр горлышка: 7 см</p>
+                <br>
+            <p>Тестирование сохранности температуры напитков производилось при следующих условиях:</p>
+            <p>Внешняя температура: 24°С</p>
+            <p>Холодные: Жидкость +1°С помещалась в термос. По истечении 24 часов её температура составляла 18°C.</p>
+            <p>Горячие: Жидкость 95°C помещалась в термос. По истечении 24 часов её температура составляла 55°C.</p>
         </div>
       </div>
     </div>
@@ -66,19 +80,19 @@
             <form class="form-horizontal">
               <div class="form-group">
                 <label for="name" class="col-sm-2 control-label">Имя</label>
-                <div class="col-sm-4">
+                <div class="col-sm-10">
                   <input type="text" class="form-control" id="name" placeholder="Иван Иванов">
                 </div>
               </div>
               <div class="form-group">
                 <label for="email" class="col-sm-2 control-label">Email</label>
-                <div class="col-sm-4">
+                <div class="col-sm-10">
                   <input type="email" class="form-control" id="email" placeholder="ivivanov@mail.ru">
                 </div>
               </div>
                 <div class="form-group">
                   <label for="comment" class="col-sm-2 control-label">Ваше обращение:</label>
-                  <div class="col-sm-4">
+                  <div class="col-sm-10">
                     <textarea class="form-control" rows="5" id="comment"></textarea>
                   </div>
                 </div> 
