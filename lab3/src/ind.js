@@ -52,7 +52,39 @@ async function generateText() {
   quoteIsLoaded = true 
 
   if (imagesAreLoaded) {
-    //display
+    ctx.filter = ''
+    const quoteChunks = []
+    let c = 0
+    let j = 0
+
+    for(let i = 0; i < quoteText.length; i++) {
+      c++
+      if (c > 20 && quoteText[i] === ' ') {
+        quoteChunks.push(quoteText.slice(j, i))
+        j = i
+        c = 0
+      }
+    }
+  
+    quoteChunks.push(quoteText.slice(j))
+    
+    console.log(quoteChunks, quoteText)
+
+    ctx.fillStyle = "#ffffff"
+
+    const chunksCount = quoteChunks.length
+
+    for (let i = 0; i< chunksCount; i++){
+
+      ctx.shadowColor="black";
+      ctx.shadowBlur=7;
+      ctx.lineWidth=3;
+      ctx.strokeText(quoteChunks[i], 250, 250 + (40* (i-chunksCount/2)))
+      ctx.shadowBlur=0;
+      ctx.fillStyle="white";
+
+      ctx.fillText(quoteChunks[i], 250, 250 + (40* (i-chunksCount/2)))
+    }
   }
 }
 
@@ -60,7 +92,8 @@ async function generateText() {
 window.onload = () => {
   addCanvas();
   addSaveButton();
-  generateText();
+  
   loadImage(300, 200, 0, 0);
+  generateText();
 
 }
