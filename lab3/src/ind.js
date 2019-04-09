@@ -126,6 +126,11 @@ function displayText() {
   }
 }
 
+function downloadImage() {
+  const image = canvas.toDataURL("image/jpg")
+  saveButton.href=image
+}
+
 window.onload = () => {
   addCanvas();
   addSaveButton();
@@ -133,4 +138,5 @@ window.onload = () => {
   generateImageCollage();
   generateText();
 
+  saveButton.addEventListener("click", downloadImage);
 }
