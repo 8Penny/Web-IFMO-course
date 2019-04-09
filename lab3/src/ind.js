@@ -42,12 +42,25 @@ function loadImage(width, height, left, top) {
   };
 }
 
+async function generateText() {
+  const response = await fetch(
+    'https://thesimpsonsquoteapi.glitch.me/quotes'
+  )
 
+  const [{quote}] = await response.json()
+  quoteText = quote.replace(/\.\.\./g, ' ')
+  quoteIsLoaded = true 
+
+  if (imagesAreLoaded) {
+    //display
+  }
+}
 
 
 window.onload = () => {
   addCanvas();
   addSaveButton();
+  generateText();
   loadImage(300, 200, 0, 0);
 
 }
